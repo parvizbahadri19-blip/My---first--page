@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>صفحه من</title>
+    <style>
+      /* CSS کلی */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+
+      h1 { color: darkblue; }
+      h2 { color: darkgreen; }
+      p { color: #333333; font-size: 16px; }
+
+      a { color: red; text-decoration: none; font-weight: bold; }
+      a:hover { color: darkred; }
+
+      img { border: 2px solid #000; margin-top: 10px; }
+
+      /* Header */
+      header {
+        background-color: #e0f7fa;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* Navigation */
+      nav {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: darkgreen;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+
+      nav a:hover { color: darkred; }
+
+      /* Section */
+      section {
+        background-color: #ffffff;
+        border: 2px solid #cccccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      }
+
+      /* Form */
+      form {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: darkblue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover { background-color: navy; }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+
+      footer a {
+        color: #ffd700;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      footer a:hover { text-decoration: underline; }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="#section1">بخش اول</a> |
+      <a href="#section2">بخش دوم</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>سلام دنیا!</h1>
+      <p>خوش آمدید!</p>
+    </header>
+
+    <!-- بخش اول -->
+    <section id="section1">
+      <h2>بخش اول</h2>
+      <p>این یک متن نمونه برای بخش اول است.</p>
+      <p>برای رفتن به گوگل روی لینک زیر کلیک کن:</p>
+      <a href="https://www.google.com" target="_blank">رفتن به گوگل</a>
+      <p>این هم یک تصویر نمونه:</p>
+      <img src="https://via.placeholder.com/150" alt="یک تصویر نمونه">
+    </section>
+
+    <!-- بخش دوم -->
+    <section id="section2">
+      <h2>بخش دوم</h2>
+      <p>این یک متن نمونه برای بخش دوم است.</p>
+    </section>
+
+    <!-- فرم تماس -->
+    <section>
+      <h2>فرم تماس</h2>
+      <form>
+        <label for="name">نام:</label><br>
+        <input type="text" id="name" name="name" placeholder="نام خود را وارد کنید"><br>
+
+        <label for="email">ایمیل:</label><br>
+        <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید"><br>
+
+        <label for="message">پیام:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="پیام خود را وارد کنید"></textarea><br>
+
+        <input type="submit" value="ارسال">
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 صفحه من. همه حقوق محفوظ است.</p>
+      <p>
+        <a href="#">درباره ما</a> |
+        <a href="#">تماس</a> |
+        <a href="#">حریم خصوصی</a>
+      </p>
+    </footer>
+  </body>
+</html>
